@@ -1,11 +1,30 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import WorkScene from './components/WorkScene';
 import { portfolioData } from './data';
+
+const THEME_KEY = 'portfolio-theme';
+
+function getInitialTheme() {
+  if (typeof window === 'undefined') {
+    return 'light';
+  }
+  const storedTheme = window.localStorage.getItem(THEME_KEY);
+  if (storedTheme === 'light' || storedTheme === 'dark') {
+    return storedTheme;
+  }
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
 
 function App() {
   const { identity, focusAreas, career, projects, articles } = portfolioData;
   const categories = useMemo(() => ['All', ...new Set(projects.map((p) => p.category))], [projects]);
   const [activeCategory, setActiveCategory] = useState('All');
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    window.localStorage.setItem(THEME_KEY, theme);
+  }, [theme]);
 
   const visibleProjects =
     activeCategory === 'All'
@@ -18,12 +37,26 @@ function App() {
         <a className="brand" href="#home">
           {identity.name}
         </a>
-        <nav className="nav">
-          <a href="#career">Career</a>
-          <a href="#projects">Projects</a>
-          <a href="#articles">Articles</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div className="topbar-tools">
+          <nav className="nav">
+            <a href="#career">Career</a>
+            <a href="#projects">Projects</a>
+            <a href="#articles">Articles</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+          >
+            <span className="theme-icon" aria-hidden="true">
+              💡
+            </span>
+            <span className="sr-only">{theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}</span>
+          </button>
+        </div>
       </header>
 
       <main id="home">
@@ -46,7 +79,7 @@ function App() {
               ))}
             </ul>
           </div>
-          <WorkScene />
+          <WorkScene theme={theme} />
         </section>
 
         <section className="section" id="career">
