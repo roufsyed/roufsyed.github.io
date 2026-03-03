@@ -123,10 +123,10 @@ main .section:last-of-type {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) minmax(520px, 1.45fr);
-  gap: 18px;
+  grid-template-columns: minmax(420px, 1.08fr) minmax(380px, 0.92fr);
+  gap: 16px;
   margin-top: 8px;
-  min-height: clamp(560px, 74vh, 760px);
+  min-height: clamp(500px, 66vh, 640px);
   align-items: stretch;
   background: var(--hero-overlay), var(--surface-strong);
 }
@@ -156,13 +156,13 @@ h3 {
 
 h1 {
   margin-top: 8px;
-  font-size: clamp(1.9rem, 4.5vw, 3rem);
-  max-width: 20ch;
-  line-height: 1.08;
+  font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+  max-width: 22ch;
+  line-height: 1.1;
 }
 
 .subtitle {
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   max-width: 60ch;
   color: var(--muted);
 }
@@ -170,8 +170,8 @@ h1 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .btn {
@@ -203,15 +203,15 @@ h1 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 18px 0 0;
+  gap: 8px;
+  margin: 14px 0 0;
   padding: 0;
 }
 
 .pill-list li {
   border-radius: 999px;
-  font-size: 0.86rem;
-  padding: 8px 12px;
+  font-size: 0.82rem;
+  padding: 7px 10px;
   font-weight: 600;
   color: #fff;
 }
@@ -225,8 +225,9 @@ h1 {
 .pill-list li:nth-child(4n + 4) { background: var(--green); }
 
 .scene-wrap {
-  min-height: 520px;
-  height: min(64vh, 620px);
+  min-height: 320px;
+  height: clamp(300px, 38vh, 390px);
+  max-height: 390px;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -254,7 +255,7 @@ h1 {
 }
 
 .article-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .timeline-item,
@@ -459,6 +460,7 @@ a.contact-item:focus-visible {
   .scene-wrap {
     min-height: 44vh;
     height: 48vh;
+    max-height: none;
   }
 
   .project-card {
