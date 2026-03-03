@@ -1,0 +1,148 @@
+import { useMemo, useState } from 'react';
+import WorkScene from './components/WorkScene';
+import { portfolioData } from './data';
+
+function App() {
+  const { identity, focusAreas, career, projects, articles } = portfolioData;
+  const categories = useMemo(() => ['All', ...new Set(projects.map((p) => p.category))], [projects]);
+  const [activeCategory, setActiveCategory] = useState('All');
+
+  const visibleProjects =
+    activeCategory === 'All'
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
+
+  return (
+    <>
+      <header className="topbar">
+        <a className="brand" href="#home">
+          {identity.name}
+        </a>
+        <nav className="nav">
+          <a href="#career">Career</a>
+          <a href="#projects">Projects</a>
+          <a href="#articles">Articles</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section className="hero section">
+          <div className="hero-copy">
+            <p className="eyebrow">{identity.title}</p>
+            <h1>Android + SDK + Backend engineering, shipped with production focus.</h1>
+            <p className="subtitle">{identity.subtitle}</p>
+            <div className="hero-actions">
+              <a className="btn btn-primary" href="#projects">
+                View Projects
+              </a>
+              <a className="btn btn-ghost" href="#contact">
+                Contact Me
+              </a>
+            </div>
+            <ul className="pill-list">
+              {focusAreas.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <WorkScene />
+        </section>
+
+        <section className="section" id="career">
+          <div className="section-head">
+            <h2>Career</h2>
+            <p>Recent scope and engineering ownership.</p>
+          </div>
+          <div className="timeline">
+            {career.map((item) => (
+              <article className="timeline-item" key={`${item.role}-${item.period}`}>
+                <h3>{item.role}</h3>
+                <div className="timeline-meta">
+                  <span>{item.org}</span>
+                  <span>{item.period}</span>
+                </div>
+                <p>{item.summary}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="projects">
+          <div className="section-head">
+            <h2>Projects</h2>
+            <p>Selected product and platform work.</p>
+          </div>
+          <div className="chips">
+            {categories.map((category) => (
+              <button
+                type="button"
+                key={category}
+                className={`chip ${activeCategory === category ? 'active' : ''}`}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+          <div className="project-grid">
+            {visibleProjects.map((project) => (
+              <article className="project-card" key={project.title}>
+                <small>{project.category}</small>
+                <h3>{project.title}</h3>
+                <p>{project.impact}</p>
+                <div className="stack">
+                  {project.stack.map((tech) => (
+                    <span key={tech}>{tech}</span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="articles">
+          <div className="section-head">
+            <h2>Articles</h2>
+            <p>Add new URLs in `src/data.js` with title, platform, and url.</p>
+          </div>
+          <div className="article-list">
+            {articles.map((article) => (
+              <article className="article-card" key={article.title}>
+                <div>
+                  <h3>{article.title}</h3>
+                  <small>{article.platform}</small>
+                </div>
+                <a href={article.url} target="_blank" rel="noreferrer noopener">
+                  Read
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="contact">
+          <div className="section-head">
+            <h2>Contact Me</h2>
+            <p>Open to collaboration on Android platforms and backend systems.</p>
+          </div>
+          <div className="contact-card">
+            <a href={`mailto:${identity.contact.email}`}>{identity.contact.email}</a>
+            <a href={identity.contact.linkedin} target="_blank" rel="noreferrer noopener">
+              linkedin.com/in/roufsyed
+            </a>
+            <a href={identity.contact.github} target="_blank" rel="noreferrer noopener">
+              github.com/your-handle
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} {identity.name}. Built with React + Three.js.</p>
+      </footer>
+    </>
+  );
+}
+
+export default App;
