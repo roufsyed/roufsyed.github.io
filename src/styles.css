@@ -52,6 +52,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 92px;
 }
 
 body {
@@ -115,10 +116,15 @@ main {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
+  scroll-margin-top: 84px;
 }
 
 main .section:last-of-type {
   margin-bottom: 8px;
+}
+
+[id] {
+  scroll-margin-top: 92px;
 }
 
 .hero {
