@@ -20,6 +20,7 @@ function App() {
   const categories = useMemo(() => ['All', ...new Set(projects.map((p) => p.category))], [projects]);
   const [activeCategory, setActiveCategory] = useState('All');
   const [theme, setTheme] = useState(getInitialTheme);
+  const resumeUrl = `${import.meta.env.BASE_URL}Profile.pdf`;
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -63,7 +64,7 @@ function App() {
         <section className="hero section">
           <div className="hero-copy">
             <p className="eyebrow">{identity.title}</p>
-            <h1>Android + SDK + Backend engineering, shipped with production focus.</h1>
+            <h1>{identity.headline}</h1>
             <p className="subtitle">{identity.subtitle}</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#projects">
@@ -71,6 +72,9 @@ function App() {
               </a>
               <a className="btn btn-ghost" href="#contact">
                 Contact Me
+              </a>
+              <a className="btn btn-resume" href={resumeUrl} download="Rouf-Syed-Resume.pdf">
+                Download Resume
               </a>
             </div>
             <ul className="pill-list">
@@ -85,7 +89,6 @@ function App() {
         <section className="section" id="career">
           <div className="section-head">
             <h2>Career</h2>
-            <p>Recent scope and engineering ownership.</p>
           </div>
           <div className="timeline">
             {career.map((item) => (
@@ -104,7 +107,6 @@ function App() {
         <section className="section" id="projects">
           <div className="section-head">
             <h2>Projects</h2>
-            <p>Selected product and platform work.</p>
           </div>
           <div className="chips">
             {categories.map((category) => (
@@ -136,8 +138,7 @@ function App() {
 
         <section className="section" id="articles">
           <div className="section-head">
-            <h2>Articles</h2>
-            <p>Add new URLs in `src/data.js` with title, platform, and url.</p>
+            <h2>Publications</h2>
           </div>
           <div className="article-list">
             {articles.map((article) => (
@@ -155,24 +156,33 @@ function App() {
         </section>
 
         <section className="section" id="contact">
-          <div className="section-head">
+          <div className="contact-head">
             <h2>Contact Me</h2>
             <p>Open to collaboration on Android platforms and backend systems.</p>
           </div>
-          <div className="contact-card">
-            <a href={`mailto:${identity.contact.email}`}>{identity.contact.email}</a>
-            <a href={identity.contact.linkedin} target="_blank" rel="noreferrer noopener">
-              linkedin.com/in/roufsyed
+          <div className="contact-grid">
+            <a className="contact-item" href={`mailto:${identity.contact.email}`}>
+              <small>Email</small>
+              <span>{identity.contact.email}</span>
             </a>
-            <a href={identity.contact.github} target="_blank" rel="noreferrer noopener">
-              github.com/your-handle
+            <a className="contact-item" href={`tel:${identity.contact.phone.replace(/\s+/g, '')}`}>
+              <small>Phone</small>
+              <span>{identity.contact.phone}</span>
+            </a>
+            <a className="contact-item" href={identity.contact.linkedin} target="_blank" rel="noreferrer noopener">
+              <small>LinkedIn</small>
+              <span>linkedin.com/in/roufsyed</span>
+            </a>
+            <a className="contact-item" href={identity.contact.github} target="_blank" rel="noreferrer noopener">
+              <small>GitHub</small>
+              <span>github.com/roufsyed</span>
             </a>
           </div>
         </section>
       </main>
 
       <footer className="footer">
-        <p>© {new Date().getFullYear()} {identity.name}. Built with React + Three.js.</p>
+        <p>© {new Date().getFullYear()} {identity.name}.</p>
       </footer>
     </>
   );
