@@ -1,35 +1,30 @@
-# React + Three.js Portfolio (GitHub Pages Ready)
+# Portfolio Website
 
-Responsive portfolio website built with:
-- React + Vite
-- Three.js via `@react-three/fiber` + `@react-three/drei`
+This is my personal portfolio site built with React, Vite, and Three.js.
 
-## Scripts
-- `npm install`
-- `npm run dev`
-- `npm run build`
-- `npm run preview`
-- `npm run deploy` (publishes `dist/` to `gh-pages` branch)
+## Local development
 
-## Edit Portfolio Content
-Update all career/projects/articles data in:
+1. Install dependencies:
+   `npm install`
+2. Start dev server:
+   `npm run dev`
+3. Build production files:
+   `npm run build`
+4. Preview production build locally:
+   `npm run preview`
+
+## Deploy to GitHub Pages (`main` branch, `docs/` folder)
+
+1. Build:
+   `npm run build`
+2. Replace docs with latest build output:
+   `rm -rf docs && cp -R dist docs && touch docs/.nojekyll`
+3. Commit and push:
+   `git add docs`
+   `git commit -m "Deploy latest build to docs"`
+   `git push origin main`
+
+## Update site content
+
+Edit portfolio content in:
 - `src/data.js`
-
-For new article links (LinkedIn/Reddit/etc), add objects in `articles`:
-
-```js
-{
-  title: 'My architecture post',
-  platform: 'LinkedIn',
-  url: 'https://www.linkedin.com/posts/...'
-}
-```
-
-## GitHub Pages Setup
-1. Push this repo to GitHub.
-2. Run `npm run deploy`.
-3. In GitHub repo settings -> Pages:
-   - Source: `Deploy from a branch`
-   - Branch: `gh-pages`, folder `/ (root)`
-
-Note: `vite.config.js` uses `base: './'` so assets resolve correctly on GitHub Pages project URLs.
