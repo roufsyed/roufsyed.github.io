@@ -55,6 +55,7 @@ function App() {
   const [activeWork, setActiveWork] = useState('All');
   const [activeOS, setActiveOS] = useState('All');
   const [theme, setTheme] = useState(getInitialTheme);
+  const [navOpen, setNavOpen] = useState(false);
   const resumeUrl = `${import.meta.env.BASE_URL}Profile.pdf`;
 
   useEffect(() => {
@@ -90,12 +91,12 @@ function App() {
           {identity.name}
         </a>
         <div className="topbar-tools">
-          <nav className="nav" aria-label="Site navigation">
-            <a href="#career">Career</a>
-            <a href="#projects">Work</a>
-            <a href="#open-source">Open Source</a>
-            <a href="#articles">Publications</a>
-            <a href="#contact">Contact</a>
+          <nav className={`nav${navOpen ? ' nav-open' : ''}`} aria-label="Site navigation">
+            <a href="#career" onClick={() => setNavOpen(false)}>Career</a>
+            <a href="#projects" onClick={() => setNavOpen(false)}>Work</a>
+            <a href="#open-source" onClick={() => setNavOpen(false)}>Open Source</a>
+            <a href="#articles" onClick={() => setNavOpen(false)}>Publications</a>
+            <a href="#contact" onClick={() => setNavOpen(false)}>Contact</a>
           </nav>
           <button
             type="button"
@@ -104,6 +105,15 @@ function App() {
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
           >
             <span aria-hidden="true">{theme === 'dark' ? '☀' : '🌙'}</span>
+          </button>
+          <button
+            type="button"
+            className="hamburger"
+            onClick={() => setNavOpen(o => !o)}
+            aria-label="Toggle navigation"
+            aria-expanded={navOpen}
+          >
+            <span className={`hamburger-icon${navOpen ? ' open' : ''}`} aria-hidden="true" />
           </button>
         </div>
       </header>
@@ -115,6 +125,9 @@ function App() {
             <p className="eyebrow">
               {identity.title}&nbsp;&nbsp;·&nbsp;&nbsp;{identity.location}
             </p>
+            {identity.availability && (
+              <span className="avail-badge">● {identity.availability}</span>
+            )}
             <h1>{identity.name}</h1>
             <p className="headline">{identity.headline}</p>
             <p className="personality">{identity.personality}</p>
@@ -136,11 +149,14 @@ function App() {
             </ul>
           </div>
           <div className="hero-photo">
-            <img
-              className="avatar"
-              src={`${import.meta.env.BASE_URL}rouf_pic.jpg`}
-              alt="Rouf Syed"
-            />
+            <picture>
+              <source srcSet={`${import.meta.env.BASE_URL}rouf_pic.webp`} type="image/webp" />
+              <img
+                className="avatar"
+                src={`${import.meta.env.BASE_URL}rouf_pic.jpg`}
+                alt="Rouf Syed"
+              />
+            </picture>
           </div>
         </section>
 

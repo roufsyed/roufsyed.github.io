@@ -9,6 +9,7 @@ export const portfolioData = {
       'I build the software between your tap and the bank\'s approval — backend services, terminals, Android, and the occasional security rabbit hole.',
     subtitle:
       'Experience in Spring Boot, Golang back-end services, Native Android development, Kotlin Multiplatform and software architecture fundamentals (OOP, LLD, DSA).',
+    availability: 'Open to opportunities',
     contact: {
       email: 'roufsyed99@gmail.com',
       phone: '+91 70210 85718',
