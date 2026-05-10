@@ -660,9 +660,9 @@ h1 {
 /* ── Publications ─────────────────────────────────────────────────────────── */
 .article-list {
   margin-top: 20px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .article-card {
@@ -672,11 +672,14 @@ h1 {
   gap: 16px;
   padding: 18px 20px;
   background: var(--card-bg);
-  transition: background 0.15s ease;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .article-card:hover {
   background: var(--bg);
+  border-color: var(--accent);
 }
 
 .article-card h3 {
