@@ -182,6 +182,11 @@ export const portfolioData = {
   ],
   articles: [
     {
+      title: '1Key: A Local-First Password Manager for Android — Technical and Strategic White Paper',
+      platform: '1Key',
+      url: 'https://roufsyed.github.io/1Key/whitepaper.html'
+    },
+    {
       title: 'Stock Market Prediction Using LSTM',
       platform: 'IJRASET Publication',
       url: 'https://www.ijraset.com/best-journal/stock-market-prediction-using-lstm'
