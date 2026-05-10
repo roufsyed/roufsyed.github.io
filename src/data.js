@@ -148,15 +148,15 @@ export const portfolioData = {
         'https://raw.githubusercontent.com/roufsyed/FreeView/master/images/homepage.jpeg'
     },
     {
-      title: 'AlphaSecure',
+      title: '1Key',
       description:
-        'Encrypted Android vault for passwords, bank details, and notes — local-only storage with zero network access.',
+        'Local-first Android password manager — Argon2id + AES-256-GCM, Keystore-bound vault key, no INTERNET permission, no account, no telemetry.',
       category: 'Android',
-      stack: ['Java', 'Encryption', 'Android'],
-      stars: 4,
-      url: 'https://github.com/roufsyed/AlphaSecure',
+      stack: ['Kotlin', 'Jetpack Compose', 'Argon2id', 'AES-256-GCM', 'Android Keystore'],
+      stars: 1,
+      url: 'https://roufsyed.github.io/1Key/',
       thumbnail:
-        'https://user-images.githubusercontent.com/51513765/115528582-cdc2bc00-a2af-11eb-968f-713c6a338c43.png'
+        'https://raw.githubusercontent.com/roufsyed/1Key/master/docs/screenshots/vault_home.jpeg'
     },
     {
       title: 'Sehat',
