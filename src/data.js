@@ -175,7 +175,8 @@ export const portfolioData = {
       category: 'Android',
       stack: ['Kotlin', 'Android', 'Productivity'],
       stars: 1,
-      url: 'https://github.com/roufsyed/Slate-Minimal-Launcher',
+      url: 'https://roufsyed.github.io/Slate-Minimal-Launcher/',
+      github: 'https://github.com/roufsyed/Slate-Minimal-Launcher',
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/Slate-Minimal-Launcher/master/screenshots/slate_home_black.jpg'
     }

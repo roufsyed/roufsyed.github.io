@@ -657,6 +657,26 @@ h1 {
   line-height: 1.55;
 }
 
+.os-github {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.os-github:hover {
+  color: var(--accent);
+}
+
+.os-github svg {
+  flex-shrink: 0;
+}
+
 /* ── Publications ─────────────────────────────────────────────────────────── */
 .article-list {
   margin-top: 20px;
