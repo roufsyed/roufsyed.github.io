@@ -6,7 +6,7 @@ export const portfolioData = {
     headline:
       'Software Engineer with hands-on experience building secure payment systems, ISO 8583, e-commerce, and ride-sharing applications.',
     personality:
-      'I build the software between your tap and the bank\'s approval — backend services, terminals, Android, and the occasional security rabbit hole.',
+      'I build the software between your tap and the bank\'s approval - backend services, terminals, Android, and the occasional security rabbit hole.',
     subtitle:
       'Experience in Spring Boot, Golang back-end services, Native Android development, Kotlin Multiplatform and software architecture fundamentals (OOP, LLD, DSA).',
     availability: 'Open to opportunities',
@@ -28,28 +28,28 @@ export const portfolioData = {
   ],
   career: [
     {
-      role: 'Software Engineer — Full Stack',
+      role: 'Software Engineer - Full Stack',
       org: 'Mosambee (Pine Labs)',
       period: 'Sep 2024 – Present',
       summary:
         'Architecting secure and scalable mPOS solutions for international clients, building BNPL services in Golang + GraphQL, implementing ISO 8583 payment flows, developing Matrix UI SDK for SDUI, shipping payment SDKs for Android/iOS terminals, and building root-detection and merchant-tracking platforms.'
     },
     {
-      role: 'Software Engineer — Android',
+      role: 'Software Engineer - Android',
       org: 'XPayBack',
       period: 'Feb 2023 – May 2024',
       summary:
         'Led revamp of the XPayBack app, defined MVVM + LiveData + Coroutines architecture with PaperDb persistence, and delivered an internal CRM app with customer analytics and reporting.'
     },
     {
-      role: 'Software Engineer — Android',
+      role: 'Software Engineer - Android',
       org: 'Novo Cabs',
       period: 'Nov 2022 – Jan 2023',
       summary:
         'Improved driver app reliability, migrated MVP to MVVM and Java to Kotlin, and introduced open-source maps for asynchronous ride tracking to reduce Google Maps API cost.'
     },
     {
-      role: 'SDE — Android',
+      role: 'SDE - Android',
       org: 'LetsUpgrade',
       period: 'Jan 2022 – Mar 2022',
       summary:
@@ -118,7 +118,7 @@ export const portfolioData = {
     {
       title: 'BP Tools',
       description:
-        'Desktop toolkit for fintech professionals — EMV tag browsing, TLV decoding, cryptogram calculations, and transaction simulation.',
+        'Desktop toolkit for fintech professionals - EMV tag browsing, TLV decoding, cryptogram calculations, and transaction simulation.',
       category: 'Desktop',
       stack: ['Kotlin', 'Jetpack Compose', 'EMV', 'Cryptography'],
       stars: 16,
@@ -139,7 +139,7 @@ export const portfolioData = {
     {
       title: 'FreeView',
       description:
-        'Lightweight Android app that renders Freedium pages in a clean WebView — read Medium articles without ads or clutter.',
+        'Lightweight Android app that renders Freedium pages in a clean WebView - read Medium articles without ads or clutter.',
       category: 'Android',
       stack: ['Kotlin', 'MVVM', 'WebView', 'Material Design'],
       stars: 8,
@@ -150,7 +150,7 @@ export const portfolioData = {
     {
       title: '1Key',
       description:
-        'Local-first Android password manager — Argon2id + AES-256-GCM, Keystore-bound vault key, no INTERNET permission, no account, no telemetry.',
+        'Local-first Android password manager - Argon2id + AES-256-GCM, Keystore-bound vault key, no INTERNET permission, no account, no telemetry.',
       category: 'Android',
       stack: ['Kotlin', 'Jetpack Compose', 'Argon2id', 'AES-256-GCM', 'Android Keystore'],
       stars: 1,
@@ -171,7 +171,7 @@ export const portfolioData = {
     {
       title: 'Slate Launcher',
       description:
-        'Text-only Android launcher for focus — no icons, no widgets, just apps listed by name. Privacy-first with local-only preferences.',
+        'Text-only Android launcher for focus - no icons, no widgets, just apps listed by name. Privacy-first with local-only preferences.',
       category: 'Android',
       stack: ['Kotlin', 'Android', 'Productivity'],
       stars: 1,
@@ -183,7 +183,7 @@ export const portfolioData = {
   ],
   articles: [
     {
-      title: '1Key: A Local-First Password Manager for Android — Technical and Strategic White Paper',
+      title: '1Key: A Local-First Password Manager for Android - Technical and Strategic White Paper',
       platform: '1Key',
       url: 'https://roufsyed.github.io/1Key/whitepaper.html'
     },
