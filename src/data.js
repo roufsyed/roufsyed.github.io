@@ -165,8 +165,8 @@ export const portfolioData = {
       category: 'Android',
       stack: ['Kotlin', 'Android', 'Health'],
       stars: 3,
-      url: 'https://github.com/roufsyed/Sehat',
-      thumbnail: null
+      url: 'https://roufsyed.github.io/Sehat/',
+      thumbnail: 'https://github.com/roufsyed/Sehat/blob/master/sehat_screenshots/home_light.jpeg?raw=true'
     },
     {
       title: 'Slate Launcher',
