@@ -123,6 +123,7 @@ export const portfolioData = {
       stack: ['Kotlin', 'Jetpack Compose', 'EMV', 'Cryptography'],
       stars: 16,
       url: 'https://github.com/roufsyed/BankingAndPaymentsTool',
+      github: 'https://github.com/roufsyed/BankingAndPaymentsTool',
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/BankingAndPaymentsTool/main/docs/screenshots/img.png'
     },
@@ -134,6 +135,7 @@ export const portfolioData = {
       stack: ['Java', 'Spring Boot', 'Hibernate', 'MySQL'],
       stars: 14,
       url: 'https://github.com/roufsyed/employee-management',
+      github: 'https://github.com/roufsyed/employee-management',
       thumbnail: null
     },
     {
@@ -144,6 +146,7 @@ export const portfolioData = {
       stack: ['Kotlin', 'MVVM', 'WebView', 'Material Design'],
       stars: 8,
       url: 'https://github.com/roufsyed/FreeView',
+      github: 'https://github.com/roufsyed/FreeView',
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/FreeView/master/images/homepage.jpeg'
     },
@@ -155,6 +158,7 @@ export const portfolioData = {
       stack: ['Kotlin', 'Jetpack Compose', 'Argon2id', 'AES-256-GCM', 'Android Keystore'],
       stars: 1,
       url: 'https://roufsyed.github.io/1Key/',
+      github: 'https://github.com/roufsyed/1Key/',
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/1Key/master/docs/screenshots/vault_home.jpeg'
     },
@@ -166,6 +170,7 @@ export const portfolioData = {
       stack: ['Kotlin', 'Android', 'Health'],
       stars: 3,
       url: 'https://roufsyed.github.io/Sehat/',
+      github: 'https://github.com/roufsyed/Sehat',
       thumbnail: 'https://github.com/roufsyed/Sehat/blob/master/sehat_screenshots/home_light.jpeg?raw=true'
     },
     {
