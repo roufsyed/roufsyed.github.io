@@ -125,9 +125,9 @@ function App() {
             <p className="eyebrow">
               {identity.title}&nbsp;&nbsp;·&nbsp;&nbsp;{identity.location}
             </p>
-            {identity.availability && (
-              <span className="avail-badge">● {identity.availability}</span>
-            )}
+{/*             {identity.availability && ( */}
+{/*               <span className="avail-badge">● {identity.availability}</span> */}
+{/*             )} */}
             <h1>{identity.name}</h1>
             <p className="headline">{identity.headline}</p>
             <p className="personality">{identity.personality}</p>
