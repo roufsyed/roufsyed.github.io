@@ -116,41 +116,6 @@ export const portfolioData = {
   ],
   openSource: [
     {
-      title: 'BP Tools',
-      description:
-        'Desktop toolkit for fintech professionals - EMV tag browsing, TLV decoding, cryptogram calculations, and transaction simulation.',
-      category: 'Desktop',
-      stack: ['Kotlin', 'Jetpack Compose', 'EMV', 'Cryptography'],
-      stars: 16,
-      url: 'https://github.com/roufsyed/BankingAndPaymentsTool',
-      github: 'https://github.com/roufsyed/BankingAndPaymentsTool',
-      thumbnail:
-        'https://raw.githubusercontent.com/roufsyed/BankingAndPaymentsTool/main/docs/screenshots/img.png'
-    },
-    {
-      title: 'Employee Management',
-      description:
-        'Spring Boot REST API with versioned endpoints (V1/V2) for employee CRUD operations, built on Hibernate + MySQL.',
-      category: 'Backend',
-      stack: ['Java', 'Spring Boot', 'Hibernate', 'MySQL'],
-      stars: 14,
-      url: 'https://github.com/roufsyed/employee-management',
-      github: 'https://github.com/roufsyed/employee-management',
-      thumbnail: null
-    },
-    {
-      title: 'FreeView',
-      description:
-        'Lightweight Android app that renders Freedium pages in a clean WebView - read Medium articles without ads or clutter.',
-      category: 'Android',
-      stack: ['Kotlin', 'MVVM', 'WebView', 'Material Design'],
-      stars: 8,
-      url: 'https://github.com/roufsyed/FreeView',
-      github: 'https://github.com/roufsyed/FreeView',
-      thumbnail:
-        'https://raw.githubusercontent.com/roufsyed/FreeView/master/images/homepage.jpeg'
-    },
-    {
       title: '1Key',
       description:
         'Local-first Android password manager - Argon2id + AES-256-GCM, Keystore-bound vault key, no INTERNET permission, no account, no telemetry.',
@@ -184,6 +149,41 @@ export const portfolioData = {
       github: 'https://github.com/roufsyed/Slate-Minimal-Launcher',
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/Slate-Minimal-Launcher/master/screenshots/slate_home_black.jpg'
+    },
+    {
+      title: 'BP Tools',
+      description:
+        'Desktop toolkit for fintech professionals - EMV tag browsing, TLV decoding, cryptogram calculations, and transaction simulation.',
+      category: 'Desktop',
+      stack: ['Kotlin', 'Jetpack Compose', 'EMV', 'Cryptography'],
+      stars: 16,
+      url: 'https://github.com/roufsyed/BankingAndPaymentsTool',
+      github: 'https://github.com/roufsyed/BankingAndPaymentsTool',
+      thumbnail:
+        'https://raw.githubusercontent.com/roufsyed/BankingAndPaymentsTool/main/docs/screenshots/img.png'
+    },
+    {
+      title: 'Employee Management',
+      description:
+        'Spring Boot REST API with versioned endpoints (V1/V2) for employee CRUD operations, built on Hibernate + MySQL.',
+      category: 'Backend',
+      stack: ['Java', 'Spring Boot', 'Hibernate', 'MySQL'],
+      stars: 14,
+      url: 'https://github.com/roufsyed/employee-management',
+      github: 'https://github.com/roufsyed/employee-management',
+      thumbnail: null
+    },
+    {
+      title: 'FreeView',
+      description:
+        'Lightweight Android app that renders Freedium pages in a clean WebView - read Medium articles without ads or clutter.',
+      category: 'Android',
+      stack: ['Kotlin', 'MVVM', 'WebView', 'Material Design'],
+      stars: 8,
+      url: 'https://github.com/roufsyed/FreeView',
+      github: 'https://github.com/roufsyed/FreeView',
+      thumbnail:
+        'https://raw.githubusercontent.com/roufsyed/FreeView/master/images/homepage.jpeg'
     }
   ],
   articles: [
