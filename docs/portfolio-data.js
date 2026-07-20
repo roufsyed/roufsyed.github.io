@@ -3,6 +3,7 @@ export const portfolioData = {
     name: 'Rouf Syed',
     title: 'SWE @ Pine Labs',
     location: 'Mumbai, India',
+    resumeUrl: 'https://drive.google.com/file/d/1XwUsSt6PwIe6THNMdnTfR5bgmW_BF8RV/view?usp=sharing',
     headline:
       'Software Engineer with hands-on experience building secure payment systems, ISO 8583, e-commerce, and ride-sharing applications.',
     personality:
@@ -121,9 +122,17 @@ export const portfolioData = {
         'Local-first Android password manager - Argon2id + AES-256-GCM, Keystore-bound vault key, no INTERNET permission, no account, no telemetry.',
       category: 'Android',
       stack: ['Kotlin', 'Jetpack Compose', 'Argon2id', 'AES-256-GCM', 'Android Keystore'],
-      stars: 1,
+      stars: 8,
       url: 'https://roufsyed.github.io/1Key/',
       github: 'https://github.com/roufsyed/1Key/',
+      fdroid: 'https://f-droid.org/en/packages/com.roufsyed.onekey/',
+      screenshots: [
+        'https://github.com/roufsyed/1Key/blob/master/docs/assets/vault_home.jpeg',
+        'https://github.com/roufsyed/1Key/blob/master/docs/assets/all_items.jpeg',
+        'https://github.com/roufsyed/1Key/blob/master/docs/assets/credential_detail.jpeg',
+        'https://github.com/roufsyed/1Key/blob/master/docs/assets/2fa_list.jpeg',
+        'https://github.com/roufsyed/1Key/blob/master/docs/assets/settings.jpeg'
+      ],
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/1Key/master/docs/screenshots/vault_home.jpeg'
     },
@@ -133,9 +142,17 @@ export const portfolioData = {
         'Android health tracker monitoring physical activity, BMI, and heart rate in one place.',
       category: 'Android',
       stack: ['Kotlin', 'Android', 'Health'],
-      stars: 3,
+      stars: 2,
       url: 'https://roufsyed.github.io/Sehat/',
       github: 'https://github.com/roufsyed/Sehat',
+      screenshots: [
+        'https://github.com/roufsyed/Sehat/blob/master/docs/assets/home_dark.jpeg',
+        'https://github.com/roufsyed/Sehat/blob/master/docs/assets/pedometer_light.jpeg',
+        'https://github.com/roufsyed/Sehat/blob/master/docs/assets/meditation_light.jpeg',
+        'https://github.com/roufsyed/Sehat/blob/master/docs/assets/heart_rate_light.jpeg',
+        'https://github.com/roufsyed/Sehat/blob/master/docs/assets/box_breathing.jpeg',
+        'https://github.com/roufsyed/Sehat/blob/master/docs/assets/settings_dark.jpeg'
+      ],
       thumbnail: 'https://github.com/roufsyed/Sehat/blob/master/sehat_screenshots/home_light.jpeg?raw=true'
     },
     {
@@ -144,9 +161,15 @@ export const portfolioData = {
         'Text-only Android launcher for focus - no icons, no widgets, just apps listed by name. Privacy-first with local-only preferences.',
       category: 'Android',
       stack: ['Kotlin', 'Android', 'Productivity'],
-      stars: 1,
+      stars: 13,
       url: 'https://roufsyed.github.io/Slate-Minimal-Launcher/',
       github: 'https://github.com/roufsyed/Slate-Minimal-Launcher',
+      fdroid: 'https://f-droid.org/en/packages/com.slate.launcher/',
+      screenshots: [
+        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_home_white.jpg',
+        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_settings_2.jpg',
+        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_settings_1.jpg'
+      ],
       thumbnail:
         'https://raw.githubusercontent.com/roufsyed/Slate-Minimal-Launcher/master/screenshots/slate_home_black.jpg'
     },
@@ -156,11 +179,15 @@ export const portfolioData = {
         'Desktop toolkit for fintech professionals - EMV tag browsing, TLV decoding, cryptogram calculations, and transaction simulation.',
       category: 'Desktop',
       stack: ['Kotlin', 'Jetpack Compose', 'EMV', 'Cryptography'],
-      stars: 16,
+      stars: 19,
       url: 'https://github.com/roufsyed/BankingAndPaymentsTool',
       github: 'https://github.com/roufsyed/BankingAndPaymentsTool',
-      thumbnail:
-        'https://raw.githubusercontent.com/roufsyed/BankingAndPaymentsTool/main/docs/screenshots/img.png'
+      screenshots: [
+        'https://github.com/roufsyed/BankingAndPaymentsTool/blob/main/docs/screenshots/img.png',
+        'https://github.com/roufsyed/BankingAndPaymentsTool/blob/main/docs/screenshots/img_1.png',
+        'https://github.com/roufsyed/BankingAndPaymentsTool/blob/main/docs/screenshots/img_2.png',
+        'https://github.com/roufsyed/BankingAndPaymentsTool/blob/main/docs/screenshots/img_3.png'
+      ]
     },
     {
       title: 'Employee Management',

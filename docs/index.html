@@ -1,26 +1,195 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rouf Syed portfolio: Android, Android SDK, Spring Boot, and Golang engineering." />
-    <title>Rouf Syed | Software Engineer</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta property="og:title" content="Rouf Syed | Software Engineer" />
-    <meta property="og:description" content="Software Engineer building payment systems, Android apps, and backend services. Based in Mumbai." />
-    <meta property="og:image" content="./og-image.png" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rouf Syed | Software Engineer" />
-    <meta name="twitter:description" content="Software Engineer building payment systems, Android apps, and backend services." />
-    <meta name="twitter:image" content="./og-image.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-C96muzLa.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-9Jg5dPi-.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rouf Syed | Software Engineer</title>
+  <meta name="description" content="Software Engineer building payment systems, Android apps, and backend services. Based in Mumbai." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="canonical" href="https://roufsyed.github.io/" />
+  <meta name="theme-color" content="#F5F4EF" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:title" content="Rouf Syed | Software Engineer" />
+  <meta property="og:description" content="Software Engineer building payment systems, Android apps, and backend services. Based in Mumbai." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://roufsyed.github.io/" />
+  <meta property="og:image" content="https://roufsyed.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rouf Syed | Software Engineer" />
+  <meta name="twitter:description" content="Software Engineer building payment systems, Android apps, and backend services. Based in Mumbai." />
+  <meta name="twitter:image" content="https://roufsyed.github.io/assets/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="top" class="page">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">Rouf Syed</a>
+      <nav id="topnav" class="topnav" aria-label="Primary">
+        <a href="#career">Career</a>
+        <a href="#work">Work</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <a href="https://drive.google.com/file/d/1XwUsSt6PwIe6THNMdnTfR5bgmW_BF8RV/view?usp=sharing" target="_blank" rel="noopener" data-resume>Résumé</a>
+      </nav>
+      <button id="hambBtn" class="hamb" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="hamb-lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Menu" tabindex="-1">
+      <div class="mobile-menu-head">
+        <span class="mobile-menu-label">Menu</span>
+        <button class="mobile-menu-close" type="button" aria-label="Close menu">
+          <span class="close-lines">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav" aria-label="Mobile">
+        <a href="#career"><span class="mm-num">01</span><span class="mm-label">Career</span></a>
+        <a href="#work"><span class="mm-num">02</span><span class="mm-label">Work</span></a>
+        <a href="#opensource"><span class="mm-num">03</span><span class="mm-label">Open Source</span></a>
+        <a href="#publications"><span class="mm-num">04</span><span class="mm-label">Publications</span></a>
+        <a href="#contact"><span class="mm-num">05</span><span class="mm-label">Contact</span></a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a href="https://drive.google.com/file/d/1XwUsSt6PwIe6THNMdnTfR5bgmW_BF8RV/view?usp=sharing" target="_blank" rel="noopener" data-resume class="mobile-menu-cta">Download résumé ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <noscript>
+      <p class="noscript-note">This site is interactive and needs JavaScript enabled to display its content.</p>
+    </noscript>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Android + Backend Engineer</div>
+          <h1 class="hero-title" id="hero-title">I build the software between your tap and <span class="italic">the bank's approval.</span></h1>
+          <p class="hero-intro">Building the systems behind card payments. ISO 8583 flows, mPOS terminals, BNPL, and the native Android apps that sit on top. I gravitate to the unglamorous parts: security, edge cases, and making money move correctly.</p>
+
+          <dl class="hero-focus">
+            <div class="focus-row">
+              <dt>Focus</dt>
+              <dd id="focusLine"></dd>
+            </div>
+          </dl>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="https://drive.google.com/file/d/1XwUsSt6PwIe6THNMdnTfR5bgmW_BF8RV/view?usp=sharing" target="_blank" rel="noopener" data-resume class="link-underline">Download résumé ↓</a>
+          </div>
+        </div>
+
+        <figure id="heroPhoto" class="hero-photo">
+          <div class="hero-photo-frame">
+            <img src="assets/rouf-portrait.webp" alt="Portrait of Rouf Syed" width="440" height="550" />
+          </div>
+          <figcaption class="hero-caption">Mumbai · <span id="mumbaiTime"></span> IST</figcaption>
+          <div id="heroSocial" class="hero-social">
+            <a id="linkEmail" href="#" aria-label="Email"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+            <a id="linkPhone" href="#" aria-label="Phone"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+            <a id="linkWhatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.38 9.38 0 0 1-1.44-5.01c0-5.18 4.22-9.4 9.41-9.4 2.51 0 4.87.98 6.64 2.76a9.35 9.35 0 0 1 2.75 6.65c0 5.18-4.22 9.4-9.4 9.4zm5.6-14.14A9.87 9.87 0 0 0 12.05 2.6C6.47 2.6 1.93 7.14 1.93 12.72c0 1.79.47 3.53 1.36 5.07l-1.45 5.28 5.41-1.42a10.1 10.1 0 0 0 4.84 1.23h.01c5.58 0 10.12-4.54 10.12-10.12a10.06 10.06 0 0 0-2.97-7.16z"/></svg></a>
+            <a id="linkLinkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CAREER -->
+    <section id="career" class="section" aria-labelledby="career-title">
+      <div class="sec-grid">
+        <div class="secRail">
+          <h2 class="rail-title" id="career-title">Career</h2>
+          <div class="rail-sub" id="careerRange"></div>
+        </div>
+        <div class="sec-body" id="careerList"></div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="sec-grid">
+        <div class="secRail">
+          <h2 class="rail-title" id="work-title">Selected Work</h2>
+          <div class="rail-sub" id="workOrgs"></div>
+        </div>
+        <div class="sec-cards">
+          <div class="chips" id="workChips" role="group" aria-label="Filter selected work"></div>
+          <div class="cards-flow" id="workList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPEN SOURCE -->
+    <section id="opensource" class="section" aria-labelledby="oss-title">
+      <div class="sec-grid">
+        <div class="secRail">
+          <h2 class="rail-title" id="oss-title">Open Source</h2>
+          <div class="rail-sub">Side projects, on GitHub</div>
+        </div>
+        <div class="sec-cards">
+          <div class="chips" id="ossChips" role="group" aria-label="Filter open source"></div>
+          <div class="cards-flow" id="ossList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section" aria-labelledby="pubs-title">
+      <div class="sec-grid">
+        <div class="secRail">
+          <h2 class="rail-title" id="pubs-title">Publications</h2>
+          <div class="rail-sub">Papers &amp; white papers</div>
+        </div>
+        <div class="pub-cards" id="pubList"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="sec-grid">
+        <div class="secRail">
+          <h2 class="rail-title" id="contact-title">Contact</h2>
+          <div class="rail-sub">Say hello</div>
+        </div>
+        <div class="sec-body">
+          <h3 class="contact-title">Let's build something<span class="italic">.</span></h3>
+          <p class="contact-intro">Open to full-time roles and collaboration on Android platforms and backend systems. The fastest way to reach me is email.</p>
+          <div class="contact-cards" id="contactList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© Rouf Syed</span>
+      <span>Software craftsman · Mumbai</span>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="./app.js"></script>
+</body>
 </html>
