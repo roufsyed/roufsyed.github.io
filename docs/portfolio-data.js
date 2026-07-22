@@ -20,12 +20,10 @@ export const portfolioData = {
     }
   },
   focusAreas: [
-    'Golang + GraphQL',
-    'Spring Boot',
-    'Native Android',
-    'Android/iOS SDK',
-    'Payment Security',
-    'mPOS Architecture'
+    'Fintech', 'Ecommerce',
+    'Spring Boot', 'Golang',
+    'Native Android', 'KMP',
+    'Cryptography'
   ],
   career: [
     {
@@ -209,8 +207,14 @@ export const portfolioData = {
       stars: 8,
       url: 'https://github.com/roufsyed/FreeView',
       github: 'https://github.com/roufsyed/FreeView',
-      thumbnail:
-        'https://raw.githubusercontent.com/roufsyed/FreeView/master/images/homepage.jpeg'
+      screenshots: [
+        'https://github.com/roufsyed/FreeView/blob/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1_home.jpeg',
+        'https://github.com/roufsyed/FreeView/blob/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2_settings.jpeg',
+        'https://github.com/roufsyed/FreeView/blob/master/fastlane/metadata/android/en-US/images/phoneScreenshots/3_history.jpeg',
+        'https://github.com/roufsyed/FreeView/blob/master/fastlane/metadata/android/en-US/images/phoneScreenshots/4_articleView.jpeg'
+      ]
+//      thumbnail:
+//        'https://raw.githubusercontent.com/roufsyed/FreeView/master/images/homepage.jpeg'
     }
   ],
   articles: [
