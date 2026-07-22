@@ -20,7 +20,7 @@ export const portfolioData = {
     }
   },
   focusAreas: [
-    'Fintech', 'Ecommerce',
+    'Payments', 'E-commerce',
     'Spring Boot', 'Golang',
     'Native Android', 'KMP',
     'Cryptography'
