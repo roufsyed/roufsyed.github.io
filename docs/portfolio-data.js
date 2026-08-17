@@ -135,6 +135,38 @@ export const portfolioData = {
         'https://raw.githubusercontent.com/roufsyed/1Key/master/docs/screenshots/vault_home.jpeg'
     },
     {
+      title: 'Slate Launcher',
+      description:
+        'Text-only Android launcher for focus - no icons, no widgets, just apps listed by name. Privacy-first with local-only preferences.',
+      category: 'Android',
+      stack: ['Kotlin', 'Android', 'Productivity'],
+      stars: 13,
+      url: 'https://roufsyed.github.io/Slate-Minimal-Launcher/',
+      github: 'https://github.com/roufsyed/Slate-Minimal-Launcher',
+      fdroid: 'https://f-droid.org/en/packages/com.slate.launcher/',
+      screenshots: [
+        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_home_white.jpg',
+        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_settings_2.jpg',
+        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_settings_1.jpg'
+      ],
+      thumbnail:
+        'https://raw.githubusercontent.com/roufsyed/Slate-Minimal-Launcher/master/screenshots/slate_home_black.jpg'
+    },
+    {
+      title: 'Papers',
+      description: 'Encrypted document scanner and management tool. Papers scans, enhances, OCRs, organizes, annotates, signs and exports documents entirely on device.',
+      category: 'Android',
+      stack: ['Kotlin', 'Android', 'Productivity', 'MVI'],
+      stars: 0,
+      url: 'https://github.com/roufsyed/Papers',
+      github: 'https://github.com/roufsyed/Papers',
+      screenshots: [
+        'https://github.com/roufsyed/Papers/raw/main/docs/screenshots/1_home.jpeg',
+        'https://github.com/roufsyed/Papers/raw/main/docs/screenshots/2_tags.jpeg',
+        'https://github.com/roufsyed/Papers/raw/main/docs/screenshots/3_settings.jpeg'
+      ],
+    },
+    {
       title: 'Sehat',
       description:
         'Android health tracker monitoring physical activity, BMI, and heart rate in one place.',
@@ -152,24 +184,6 @@ export const portfolioData = {
         'https://github.com/roufsyed/Sehat/blob/master/docs/assets/settings_dark.jpeg'
       ],
       thumbnail: 'https://github.com/roufsyed/Sehat/blob/master/sehat_screenshots/home_light.jpeg?raw=true'
-    },
-    {
-      title: 'Slate Launcher',
-      description:
-        'Text-only Android launcher for focus - no icons, no widgets, just apps listed by name. Privacy-first with local-only preferences.',
-      category: 'Android',
-      stack: ['Kotlin', 'Android', 'Productivity'],
-      stars: 13,
-      url: 'https://roufsyed.github.io/Slate-Minimal-Launcher/',
-      github: 'https://github.com/roufsyed/Slate-Minimal-Launcher',
-      fdroid: 'https://f-droid.org/en/packages/com.slate.launcher/',
-      screenshots: [
-        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_home_white.jpg',
-        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_settings_2.jpg',
-        'https://github.com/roufsyed/Slate-Minimal-Launcher/blob/master/docs/assets/slate_settings_1.jpg'
-      ],
-      thumbnail:
-        'https://raw.githubusercontent.com/roufsyed/Slate-Minimal-Launcher/master/screenshots/slate_home_black.jpg'
     },
     {
       title: 'BP Tools',
@@ -207,6 +221,7 @@ export const portfolioData = {
       stars: 8,
       url: 'https://github.com/roufsyed/FreeView',
       github: 'https://github.com/roufsyed/FreeView',
+      fdroid: 'https://f-droid.org/en/packages/com.rouf.freeview/',
       screenshots: [
         'https://github.com/roufsyed/FreeView/blob/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1_home.jpeg',
         'https://github.com/roufsyed/FreeView/blob/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2_settings.jpeg',
