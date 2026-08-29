@@ -175,6 +175,7 @@ export const portfolioData = {
       stars: 2,
       url: 'https://roufsyed.github.io/Sehat/',
       github: 'https://github.com/roufsyed/Sehat',
+      fdroid: 'https://f-droid.org/en/packages/com.rouf.saht/',
       screenshots: [
         'https://github.com/roufsyed/Sehat/blob/master/docs/assets/home_dark.jpeg',
         'https://github.com/roufsyed/Sehat/blob/master/docs/assets/pedometer_light.jpeg',
